@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+<body>
+    <!-- alert messages -->
+    <div class="alert-success">
+        <span>Message Sent! Thank You For Contacting Us.</span>
+    </div>
+    <div class="contact-section">
+        <div class="contact-info">
+            <div><i class="fas fa-map-marker-alt"></i>Adress,country</div>
+            <div><i class="fas fa-envelope"></i>contact@email.com</div>
+            <div><i class="fas fa-phone"></i>+0000000000</div>
+            <div><i class="fas fa-clock"></i>Monday-Friday </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h2>We'd Love To Hear From You :)</h2>
+        <form class="contact" action="index.php" method="post">
+            <div class="form-group">
+                <input type="text" name="username" class="text-box" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" class="text-box" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <input type="phone" name="phone" class="text-box" placeholder="Enter your phone">
+            </div>
+            <div class="form-group">
+                <textarea name="message" id="message" cols="15" rows="5" placeholder="Your Message"></textarea>
+            </div>
+            <input type="submit" name="submit" class="submit-btn" value="submit">
+           
+        </form>
+    </div>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            background-image: url('contactme.png');
+            align-items: center;
+            background-size: cover;
+            display:flex;
+            justify-content: center;         
+        }
+        .contact-section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-info{
+            color: #fff;
+            max-width: 500px;
+            line-height: 65px;
+            padding-left: 50px;
+            font-size: 19px;
+        }
+        .contact-info i{
+            margin-right: 20px;
+            font-size: 25px;
+        }
+        .contact-form .form-group{
+            max-width: 800px;
+            margin-left: 300px;
+            /* margin-right: 400px; */
+            align-items: center;
+             justify-content: center;
+            
+         }
+         .contact-info, .contact-form .contact  .form-group{
+             flex: 1;
+         }
+         .contact-form h2{
+             color: #fff;
+             /* text-align: center; */
+             font-size: 35px;
+             text-transform: uppercase;
+             margin-bottom: 30px;
+             margin-left: 300px;
+             justify-content: center;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         }
+         .contact-form .contact .form-group .text-box{
+             background:#000;
+             color: #fff;
+             border: none;
+             /* width: calc(50% -10px); */
+             width: 50%;
+             height: 50px;
+             padding: 12px;
+             font-size: 15px;
+             border-radius: 5px;
+             box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+             margin-bottom: 20px;
+             opacity: 0.9;
+             align-items: center;
+             justify-content: center;
+             margin-right: 800px;
+         }        
+         .contact-form .form-group textarea{
+             background: #000;
+             color: #fff;
+             border: none;
+             width: 80%;
+             padding: 15px;
+             font-size: 15px;
+             min-height: 200px;
+             max-height: 400px;
+             resize: vertical;
+             border-radius: 5px;
+             box-shadow:  0 1px 1px rgba(0,0,0,0.1);
+             margin-bottom: 20px;
+             opacity: 0.9;
+             align-items: center;
+             justify-content: center;
+         }
+         .submit-btn{
+             margin-left: 500px;
+             width: 200px;
+             border: none;
+             border-radius: 5px;
+             padding: 10px;
+             background:rgb(255, 216, 216);
+         }
+         .alert-success{
+             z-index: 1;
+             background:#D4EDDA;
+             font-size: 18px;
+             padding: 10px 30px;
+             min-width: 400px;
+             position: fixed;
+             right: 0;
+             top: 10px;
+             border-left: 8px solid #3AD66E;
+             border-radius: 5px;
+         }
+    </style>
+    
+</body>
+
+</html>

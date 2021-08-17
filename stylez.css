@@ -1,0 +1,207 @@
+/* CSS Variables */
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    --navbar-height:50px;
+}
+
+/* Navigation Bar */
+#logo{
+    margin: 12px 25px;
+    }
+    #logo image{
+        height: 56px;
+        margin: 30px 30px;
+    }
+
+ #navbar{
+    display:flex;
+    align-items:center;
+    position: relative;
+    top: 0%;
+    
+ }
+ #navbar{
+    position: relative;
+    
+}
+#navbar ul{
+    display: flex;
+    font-family:'Baloo Bhai', cursive;
+    
+}
+#navbar:before{
+    content:"";
+    background-color:black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.8rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+color: black;
+background-color: rgb(255, 244, 242);
+
+} 
+
+#home h1{
+    color:darkblue;
+    text-align:center;
+    font-size: 2.5em;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+#home h4 {
+    text-align: center;
+    font-size: 2.2rem;
+    color:darkblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box{
+    /* position:absolute; */
+    /* top: 20%;
+    left: 20%;
+    transform: translate(-20%,-20%);
+    padding: 20px; */
+    /* box-sizing: border-box; */
+    background:white;
+    border-radius: 4px;
+    display: flex;
+    width: 1520px;
+    padding: 90px;
+    text-align: left;
+}
+.box .imgBx{
+    width: 560px;
+    flex:  0 0 560px;
+    align-items: left center;
+}
+.box .imgBx img{
+    max-width: 100%;
+}
+.box .content{
+    padding-right: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+}
+#contact{
+    position: relative;
+    color: darkblue;
+    font-family: 'Bree Serif', serif;
+    
+}
+.h-primary{
+    text-align: center;
+}
+/* #contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.6;
+    background-color: rgb(255, 251, 236);
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 95%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.4rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: serif;
+    width: 40%;
+}  */
+
+.media-icons{
+    /* background: black ; */
+    color:rgb(241, 214, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.media-icons a{
+    position: relative;
+    color: #111;
+    font-size: 30px;
+    transition: 0.3s;
+    transition-property: tranform;
+
+}
+.media-icons a:not(:last-child){
+margin-right: 60px;
+}
+.media-icons a:hover{
+    transform: scale(1.5);
+}
+.media-icons img{
+    margin: 20px;
+    margin-left: 40px;
+}
+.media-icons h4{
+    color: black;
+    font-size: 2.4rem;
+    font-family: 'Bree Serif', serif;
+}
+.stats{
+    color:darkblue;
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: 'Bree Serif', serif;
+}
+footer{
+    background-color: rgb(247, 243, 230);
+    
+}
+.whatsapp{
+    position:fixed;
+    right: 0px;
+    top: 82%;
+    /* bottom: 90%; */
+}
+.whatsapp p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+.whatsapp h4{
+    color: white;
+    background: rgb(39, 247, 91);
+    padding: 12px;
+    border-radius: 10px;
+}
+
+
+
+
